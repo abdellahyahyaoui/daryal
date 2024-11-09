@@ -1,4 +1,6 @@
 # Directorios del entorno virtual y dependencias
 env/
 
+# .gitignore
+.env
 
