@@ -2,7 +2,7 @@ import openai
 import logging
 
 # Configura la clave de API para OpenAI directamente (solo para pruebas)
-openai.api_key = "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"
+openai.api_key = "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"
 
 def obtener_respuesta_gpt(prompt):
     try:

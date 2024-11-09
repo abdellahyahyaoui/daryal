@@ -1,0 +1,6 @@
+# Directorios del entorno virtual y dependencias
+env/
+
+
+# Archivos de entorno
+.env
