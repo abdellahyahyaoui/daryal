@@ -1,0 +1,32 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+   overflow: auto;
+    /* Evita el desplazamiento si el contenido es más grande que la pantalla */
+}
+
+.scene-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: 0;
+    /* Mantiene la escena en el fondo */
+    background-color: #ffffff;
+    /* Color de fondo en caso de que la escena no cargue */
+}
+
+
+
+/* Media query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .scene-container {
+        width: 100vw;
+        height: 100vh;
+    }
+}

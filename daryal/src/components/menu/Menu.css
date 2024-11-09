@@ -1,0 +1,55 @@
+/* menu.css */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500&display=swap');
+.menu {
+    
+    display: flex;
+    gap: 1.5rem;
+    /* Espacio entre los elementos del menú */
+    align-items: center;
+    margin-left: auto;
+    /* Alinea el menú a la derecha */
+    justify-content: space-between;
+        font-family: 'Urbanist', sans-serif;
+            width: 7 '' px;
+                max-width: 90%;
+            width: 100vw;
+            font-size: clamp(3rem, 6vw, 6rem);
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            color: #333;
+margin: 20px;
+    
+}
+
+
+.menu-item {
+    
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #b0bfd2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 968px) {
+    .menu-item {
+        color: #192b42;
+        /* Cambia el color cuando se pasa el ratón */
+    }
+    .navigacion{
+        margin-left: 43px;
+    }
+}
+
+.menu-item:hover {
+    color: rgba(59, 130, 246, 0.7);
+    /* Cambia el color cuando se pasa el ratón */
+}
+.item{
+display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: space-between;
+    margin-right: -29px;
+
+}

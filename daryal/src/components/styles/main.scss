@@ -1,0 +1,90 @@
+// Variables
+$primary-bg-color: #073d7ea8;
+$primary-text-color: #dce3ec;
+$primary-font-family: 'Urbanist', sans-serif;
+$secondary-font-family: "Archivo Black", sans-serif;
+$border-radius: 40px;
+$box-shadow: 1px 0px 20px 0px #ffffff7a;
+
+// Mixins
+@mixin card-style {
+    padding: 20px;
+    text-align: center;
+    background-color: $primary-bg-color;
+    font-family: $primary-font-family;
+    backdrop-filter: invert(1);
+    box-shadow: $box-shadow;
+    border-radius: $border-radius;
+    color: $primary-text-color;
+    font-weight: 600;
+    letter-spacing: 0.4em;
+    transform: translateY(20px);
+    animation: logoBounce 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    transition: opacity 300ms ease-out-in, transform 300ms ease-out-in;
+    text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+@mixin title-style {
+    font-family: $secondary-font-family;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    padding: 10px;
+    background-image: linear-gradient(342deg, rgb(255 255 255), rgba(244, 246, 247, 0.5) 42%, #ffffff 74%, #121111);
+    background-clip: text;
+    -webkit-background-clip: text;
+    box-shadow: -2px 1px 20px rgb(255 255 255);
+    border-radius: 31px;
+    backdrop-filter: opacity(0.5);
+    background: #00000085;
+    color: $primary-text-color;
+}
+
+@mixin button-style {
+    border-radius: 3em;
+    background: #e8e8e869;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: inset 6px 6px 12px #fff7f7, inset 1px -1px 20px #031224b8;
+    font-family: "Poppins", sans-serif;
+    padding: 20px;
+    color: $primary-text-color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+}
+
+// Keyframes
+@keyframes neon-pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff, 0 0 20px #ffffff;
+    }
+
+    50% {
+        box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff;
+    }
+}
+
+// Placeholder selectors
+%input-style {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(253 253 253 / 36%);
+    color: white;
+    box-shadow: 0px 0px 20px #ffffff1f;
+    margin-left: 10px;
+
+    &:focus {
+        outline: none;
+        border: 1px solid #eceff23d;
+        box-shadow: 0 0 5px rgba(244, 246, 247, 0.5);
+    }
+}

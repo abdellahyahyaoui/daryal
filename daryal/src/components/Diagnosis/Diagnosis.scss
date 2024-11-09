@@ -1,0 +1,20 @@
+@import '../styles/main.scss';
+
+.diagnosis {
+  @include card-style;
+
+  h2,h3 {
+    @include title-style;
+  }
+ul{
+  list-style: none;
+}
+}
+
+@media (max-width: 768px) {
+  .diagnosis {
+    scale: 0.9;
+    margin-top: -100px;
+  }
+
+}

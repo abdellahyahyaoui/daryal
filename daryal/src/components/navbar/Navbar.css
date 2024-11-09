@@ -1,0 +1,44 @@
+/* navbar.css */
+
+.navbar {
+    transform: scale(0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    padding: 1rem 3rem;
+   
+    width: 450px;
+        
+            
+            box-shadow: 1px 1px 8px rgb(254, 254, 255);
+            border-radius: 40px;
+                height: 30px;
+                    margin-right: 40px;
+        }
+   
+    /* Sombra suave debajo del navbar */
+
+.menu-completo{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .menu-completo {
+        flex-direction: column;
+        
+        align-items: center;
+         width: 100%;
+
+    }}
+        @media (max-width: 768px){
+            .navbar{
+                width: 280px;
+                margin: 0px;
+                margin-top: -30px;
+                box-shadow: 1px 1px 20px 0px #3b82f68a;
+            }
+        }
