@@ -2,7 +2,7 @@ import openai
 import logging
 
 # Configura la clave de API para OpenAI directamente (solo para pruebas)
-openai.api_key = "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"
+openai.api_key = "aqui debes poner la clave que te voy a dar"
 
 def obtener_respuesta_gpt(prompt):
     try:
