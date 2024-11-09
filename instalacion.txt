@@ -1,0 +1,34 @@
+para frontend
+
+
+1 - descargar repositorio
+2 - descomprimir carpetas
+3 _ abrir vs code
+4 - cd daryal-main
+5 - cd daryal
+6 - instalar dependencias :
+ npm install
+7 -iniciar con este comando :
+npm start
+
+
+para backend flask
+
+
+te pones en la carpeta backend
+  2 - cd daryal-main
+3- cd backend
+
+4  - activar entorno virtual
+4-1 python -m venv env
+4-2 env\Scripts\activate
+5- instalar dependencias poner este comando:
+pip install flask flask-cors openai==0.28.0 python-dotenv
+ 5- iniciar con este comando:
+ python app.py 
+    
+
+
+
+    despues debes poner la clave que te voy a dar en el archivo  openai_helper.py donde esta señalado y con ""
+
